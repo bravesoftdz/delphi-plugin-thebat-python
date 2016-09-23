@@ -9,13 +9,13 @@ print tb.geti('cursorbody')*2
 %Exec("uptime")
 
 %Py("
-tb.set('from','foonus@kaishaku.org')
+tb.set('from','foonus@---.org')
 print tb.get('from')
 print tb.get('215')
 ")
 
 %Py("
-tb.set('215','set@kaishaku.org')
+tb.set('215','set@---.org')
 ")
 
 %Py("
@@ -45,11 +45,11 @@ for i in range(tb.paramcount()):
 "
 import os, sys
 os.environ['TMDAHOST'] = 'saakal.pair.com'
-os.environ['TMDANAME'] = 'mlkesl'
-os.environ['TMDAUSER'] = 'mlkesl'
+os.environ['TMDANAME'] = 'rzmk'
+os.environ['TMDAUSER'] = 'rzmk'
 
 from TMDA.Address import DatedAddress
 
-tb.set('replyto',str(DatedAddress().create('test@kaishaku.org','5d')))
+tb.set('replyto',str(DatedAddress().create('test@---.org','5d')))
 "
 )
